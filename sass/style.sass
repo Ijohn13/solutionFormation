@@ -6,7 +6,7 @@
 @import '../sass/general/_reset'
 @import '../sass/general/_body'
 
-//header start
+//====== header start =================================
 .navbar, .containerNavbar
     padding: 0
 
@@ -19,9 +19,10 @@
 
 .menu
     color: $blue
-//header end
 
-//main start
+//======= header end =================================
+
+//======== main start =========================
 #nameEnterprise
     text-align: center
     margin-top: 30px
@@ -225,10 +226,68 @@ form > input, #message
     width: 100%
     height: 50px
 
+//======== main END =========================
+
+//======== FOOTER START =========================
+
 footer
     display: flex
     justify-content: end
 
 #signature
-    color: gold
-    @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,600&family=Dancing+Script&family=Dongle:wght@300&family=Nanum+Gothic&family=Poppins:ital,wght@1,300&family=Sansita+Swashed:wght@300&display=swap')
+    color: rgba(156, 154, 43, 0.933)
+    font-family: destroy
+    font-size: 0.8rem
+
+#copyright
+    font-family: destroy
+    font-size: 0.5rem
+
+//======== FOOTER END =========================
+
+//======== MODAL START =========================
+
+.modal-content
+    background-color: #090909
+
+.titleSignature
+    text-align: center
+    color: rgba(156, 154, 43, 0.933)
+    font-family: destroy
+    font-size: 2em
+
+.subTitleSignature
+    text-align: center
+    color: white
+    font-family: destroy
+    font-size: 0.8em
+
+.facebook:hover
+    color: #3b5998
+
+
+.twitter:hover
+    color: #3cf
+
+
+.instagram:hover
+    color: #bd38a0
+
+
+.social-btns 
+    padding: 3px
+    text-align: center
+
+
+.facebook, .twitter, .instagram 
+    margin: 5px
+    color: rgba(156, 154, 43, 0.933)
+
+#containerButtonClose
+    display: flex
+    justify-content: center
+
+#buttonClose
+    width: 100px
+    margin-top: 50px
+    color: rgba(156, 154, 43, 0.933)
