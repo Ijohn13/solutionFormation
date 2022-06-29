@@ -32,21 +32,22 @@ ScrollReveal().reveal('#containerQualiopi', { scale: 0.85 });
 ScrollReveal().reveal('#descriptionQualiopi', { delay: 700 });
 ScrollReveal().reveal('#solutionFormationQualiopi', { delay: 700 });
 ScrollReveal().reveal('#containerHandicapLogo', { delay: 700 });
-ScrollReveal().reveal('#containerCounters', { delay: 700 });
 ScrollReveal().reveal('#containerChoiceForamtion', { delay: 700 });
 ScrollReveal().reveal('#containerForms', {
     distance: '100px',
     opacity: 0
-})
+});
+ScrollReveal().reveal('#containerCounters', {afterReveal: showCounters});
 
 //===== START - COUNTER =============================
 
 let n = 97; //Nombre final du compteur
 let n2 = 96;
 let cpt = 0; //Initialisation du compteur
-let duration = 70 // Durée en seconde pendant laquel le compteur ira de O à n/n2
+let duration = 70
 let node = document.getElementById("counter1");
 let node2 = document.getElementById("counter2");
+let containerCounters = document.getElementById("containerCounters");
 
 function countdown() {
     node.innerHTML = ++cpt + " %";
@@ -55,8 +56,6 @@ function countdown() {
     }
 }
 
-countdown();
-
 function countdown2() {
     node2.innerHTML = ++cpt + " %";
     if (cpt < n2) {
@@ -64,6 +63,9 @@ function countdown2() {
     }
 }
 
-countdown2();
+function showCounters() {
+        countdown();
+        countdown2();
+}
 
 //============ END - COUNTER =============================

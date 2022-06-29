@@ -1,13 +1,7 @@
-#containerImage, #containerCard {
-  display: -webkit-box;
-  display: -ms-flexbox;
+#containerCard, #containerImage {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -43,7 +37,6 @@ body {
 #nameEnterprise {
   text-align: center;
   margin-top: 30px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #5FC8D4), color-stop(50%, #FF0080), color-stop(75%, #FF875C), to(#311199));
   background: linear-gradient(360deg, #5FC8D4 25%, #FF0080 50%, #FF875C 75%, #311199 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -52,13 +45,8 @@ body {
 }
 
 #containerImage {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 #illustrationFormation {
@@ -80,12 +68,8 @@ body {
 
 #parabottomRight {
   color: #FF875C;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
   margin-right: 100px;
   margin-top: 50px;
   font-size: 2em;
@@ -113,33 +97,21 @@ body {
 }
 
 #containerQualiopi {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 #containerTitleQualiopi {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 #titleQualiopi {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #311199;
 }
 
 #certification {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -167,7 +139,6 @@ body {
 }
 
 .solutionFormation {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #5FC8D4), color-stop(50%, #FF0080), color-stop(75%, #FF875C), to(#311199));
   background: linear-gradient(360deg, #5FC8D4 25%, #FF0080 50%, #FF875C 75%, #311199 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
@@ -175,8 +146,6 @@ body {
 }
 
 #containerHandicapLogo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 10%;
 }
@@ -207,11 +176,8 @@ body {
 }
 
 #containerCounters {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin-top: 5%;
 }
 
@@ -237,12 +203,8 @@ body {
 }
 
 #subTitleChoiceFormation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5%;
@@ -256,8 +218,6 @@ body {
 }
 
 #containerForms {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 5%;
   margin-left: 5%;
@@ -272,21 +232,13 @@ body {
 }
 
 .containerForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
 
 .containerIcon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-right: 1%;
 }
 
@@ -308,13 +260,8 @@ body {
 }
 
 .containerFormInput {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 form > input, #message {
@@ -332,12 +279,8 @@ form > input, #message {
 }
 
 footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  justify-content: end;
 }
 
 #signature {
@@ -392,17 +335,12 @@ footer {
 }
 
 #containerButtonClose {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 #buttonClose {
   width: 100px;
   margin-top: 50px;
   color: rgba(156, 154, 43, 0.933);
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
