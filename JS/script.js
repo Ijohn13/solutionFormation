@@ -69,3 +69,9 @@ function showCounters() {
 }
 
 //============ END - COUNTER =============================
+
+//============ SEND E-MAIL ===============================
+
+$(document).ready(function() {
+    $('form').validate();
+})
