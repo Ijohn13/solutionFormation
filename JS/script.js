@@ -1,4 +1,6 @@
 //========= ANIMATIONS ================================
+
+//===========index.html - start =============
 ScrollReveal({ distance: '300px' });
 ScrollReveal().reveal('#logo', { origin: 'left' });
 ScrollReveal({ distance: '700px' });
@@ -38,6 +40,14 @@ ScrollReveal().reveal('#containerForms', {
     opacity: 0
 });
 ScrollReveal().reveal('#containerCounters', {afterReveal: showCounters});
+//================= index.html - end =========
+
+//================= presentation.html - start =================
+ScrollReveal().reveal('#container-presentation', { origin: 'left'});
+ScrollReveal().reveal('.para-presentation', { origin: 'right'});
+ScrollReveal().reveal('#title-presentation', { origin: 'bottom'});
+ScrollReveal().reveal('.para1', { origin: 'top'});
+ScrollReveal().reveal('.para2', { origin: 'bottom'});
 
 //===== START - COUNTER =============================
 
