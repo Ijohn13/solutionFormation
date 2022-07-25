@@ -9,8 +9,18 @@
 //==================== INDEX.HTML - START =====================
 
 //====== header start =================================
-.navbar, .containerNavbar
+#navbar
+    position: sticky
+    top: 0
+    z-index: 2
+
+.containerNavbar
     padding: 0
+
+/*#navbar
+    top: 0
+    position: sticky
+    z-index: 2
 
 #logo
     height: 200px
@@ -27,7 +37,7 @@
 //======== main start =========================
 #nameEnterprise
     text-align: center
-    margin-top: 30px
+    margin-top: 200px
     background: linear-gradient(360deg, #5FC8D4 25%,#FF0080 50%, #FF875C 75%, #311199 100%)
     background-clip: border-box
     -webkit-background-clip: text
