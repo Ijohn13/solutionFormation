@@ -1,5 +1,16 @@
 //========= ANIMATIONS - start ================================
 
+//===========animation navbar - start =============
+const navigation = document.querySelector("#navbar");
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY > 200) {
+        navigation.classList.add('animeNavbar');
+    } else {
+        navigation.classList.remove('animeNavbar');
+    }
+})
+
 //===========index.html - start =============
 ScrollReveal({ distance: '300px' });
 ScrollReveal().reveal('#logo', { origin: 'left' });
