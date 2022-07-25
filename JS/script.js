@@ -1,4 +1,4 @@
-//========= ANIMATIONS ================================
+//========= ANIMATIONS - start ================================
 
 //===========index.html - start =============
 ScrollReveal({ distance: '300px' });
@@ -12,11 +12,6 @@ ScrollReveal().reveal('#nameEnterprise', {
 })
 ScrollReveal().reveal('#illustrationFormation', {
     delay: 1000,
-    distance: '100px',
-    opacity: 0
-})
-ScrollReveal().reveal('#buttonContact', {
-    delay: 1200,
     distance: '100px',
     opacity: 0
 })
@@ -37,7 +32,8 @@ ScrollReveal().reveal('#containerHandicapLogo', { delay: 700 });
 ScrollReveal().reveal('#containerChoiceForamtion', { delay: 700 });
 ScrollReveal().reveal('#containerForms', {
     distance: '100px',
-    opacity: 0
+    opacity: 0,
+    delay: 700
 });
 ScrollReveal().reveal('#containerCounters', {afterReveal: showCounters});
 //================= index.html - end =========
@@ -46,8 +42,49 @@ ScrollReveal().reveal('#containerCounters', {afterReveal: showCounters});
 ScrollReveal().reveal('#container-presentation', { origin: 'left'});
 ScrollReveal().reveal('.para-presentation', { origin: 'right'});
 ScrollReveal().reveal('#title-presentation', { origin: 'bottom'});
-ScrollReveal().reveal('.para1', { origin: 'top'});
-ScrollReveal().reveal('.para2', { origin: 'bottom'});
+ScrollReveal().reveal('.para1', { origin: 'top', delay: 2000});
+ScrollReveal().reveal('.para2', { origin: 'bottom', delay: 2000});
+//================= presentation.html - end =================
+
+//================= nosformations.html - start =================
+ScrollReveal().reveal('#container-formation-para', { origin: 'left', distance: '700px', delay: 1000});
+ScrollReveal().reveal('#container-formation-imgworld', { scale: 0.85, delay: 800});
+ScrollReveal().reveal('#objectifs-title', { origin: 'top' });
+ScrollReveal().reveal('#objectifs-para', { origin: 'bottom' });
+ScrollReveal().reveal('#container-mockup-image', {opacity: 0.2, delay: 1000});
+ScrollReveal().reveal('#container-mockup-para', { origin: 'right', delay: 1000});
+ScrollReveal().reveal('#container-responsable-img', { 
+    origin: 'left', 
+    distance: '700px', 
+    delay: 1000});
+ScrollReveal().reveal('#container-responsable-para', { 
+    origin: 'right', 
+    distance: '700px', 
+    delay: 1000});
+ScrollReveal().reveal('#select-formation-title', { 
+    origin: 'left', 
+    distance: '700px', 
+    delay: 1000});
+ScrollReveal().reveal('.sf-para1', { 
+    origin: 'right', 
+    distance: '700px', 
+    delay: 1000});
+ScrollReveal().reveal('.sf-para2', { 
+    origin: 'bottom', 
+    distance: '500px', 
+    delay: 1000});
+ScrollReveal().reveal('.container-select-formation', { 
+    origin: 'bottom', 
+    distance: '500px', 
+    delay: 1000});
+ScrollReveal().reveal('#container-objectif', {
+    rotate: {
+        x: 20,
+        z: 20
+    }
+});
+//========= ANIMATIONS - end ================================
+
 
 //===== START - COUNTER =============================
 
