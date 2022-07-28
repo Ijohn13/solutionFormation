@@ -2,18 +2,20 @@
 
 //===========animation navbar - start =============
 const navigation = document.querySelector("#navbar");
+const logo = document.querySelector(".logoNone");
 
 window.addEventListener('scroll', () => {
     if(window.scrollY > 200) {
         navigation.classList.add('animeNavbar');
+        logo.classList.remove('animeLogo');
     } else {
         navigation.classList.remove('animeNavbar');
+        logo.classList.add('animeLogo');
     }
 })
 
 //===========index.html - start =============
 ScrollReveal({ distance: '300px' });
-ScrollReveal().reveal('#logo', { origin: 'left' });
 ScrollReveal({ distance: '700px' });
 ScrollReveal().reveal('#navbarNavAltMarkup', { origin: 'right' });
 ScrollReveal().reveal('#nameEnterprise', {
@@ -26,10 +28,16 @@ ScrollReveal().reveal('#illustrationFormation', {
     distance: '100px',
     opacity: 0
 })
-ScrollReveal({distance: '100px', delay: 1200})
 ScrollReveal().reveal('#paratopLeft', { origin: 'left' });
 ScrollReveal().reveal('#parabottomRight', { origin: 'right'});
 ScrollReveal().reveal('.card', { 
+    delay: 1200,
+    rotate: {
+        x: 20,
+        z: 20
+    }
+}, {delay: 1000});
+ScrollReveal().reveal('#prixFormations', { 
     delay: 1200,
     rotate: {
         x: 20,
@@ -129,7 +137,32 @@ function showCounters() {
 //============ END - COUNTER =============================
 
 //============ SEND E-MAIL ===============================
+const fromMail = document.getElementById("mail").value;
+const bodyMessage = document.getElementById("message").value;
+const phone = document.getElementById("phone").value;
+const fromName = document.getElementById("name").value;
+const toMail = 'ostunijohn@gmail.com';
 
-$(document).ready(function() {
-    $('form').validate();
-})
+//le code fonctionne mais pas l'envoie du mail
+function sendEmail() {
+    Email.send({
+        Host : "smtp.elasticemail.com",
+        Username : "<ostunijohn@gmail.com>",
+        Password : "<3578763B982DF357B97289C2D5135E9E11E7>",
+        To : 'ostunijohn@gmail.com',
+        From : fromMail,
+        Subject : fromName + phone,
+        Body : bodyMessage
+    }).then(
+        message => alert('email envoyé')
+    );
+    resetForm();
+    }
+
+//ne fonctionne pas
+function resetForm() {
+    document.getElementById("name").reset();
+    document.getElementById("phone").reset();
+    document.getElementById("phone").reset();
+    document.getElementById("mail").reset();
+}

@@ -23,6 +23,11 @@ body {
   position: sticky;
   top: 0;
   z-index: 2;
+  transition: all 0.2s ease-in-out;
+}
+
+.animeLogo {
+  display: none;
 }
 
 .animeNavbar {
@@ -34,7 +39,7 @@ body {
   padding: 0;
 }
 
-#logo {
+#logo, #containerLogo {
   height: 200px;
   width: 200px;
 }
@@ -49,12 +54,16 @@ body {
 
 #nameEnterprise {
   text-align: center;
-  margin-top: 200px;
-  background: linear-gradient(360deg, #5FC8D4 25%, #FF0080 50%, #FF875C 75%, #311199 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin-top: 150px;
   font-size: 5em;
+}
+
+.nameS {
+  color: #311199;
+}
+
+.nameF {
+  color: rgb(255, 135, 92);
 }
 
 #containerImage {
@@ -147,13 +156,6 @@ body {
   margin: 10px;
 }
 
-.solutionFormation {
-  background: linear-gradient(360deg, #5FC8D4 25%, #FF0080 50%, #FF875C 75%, #311199 100%);
-  background-clip: border-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 #containerHandicapLogo {
   display: flex;
   margin-top: 10%;
@@ -176,7 +178,6 @@ body {
 
 #containerLogoHandicap {
   margin-left: 10%;
-  margin-top: 1%;
 }
 
 .logoHandicap {
@@ -188,6 +189,13 @@ body {
   display: flex;
   justify-content: space-around;
   margin-top: 5%;
+}
+
+.containerCounter {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 #counter1, #counter2 {
@@ -237,7 +245,7 @@ body {
 }
 
 #titleForm {
-  color: rgb(255, 0, 128);
+  color: red;
 }
 
 .containerForm {
@@ -592,6 +600,7 @@ hr {
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 30px;
   padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .select-formation-para1 {
